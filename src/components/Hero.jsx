@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, ArrowRight, Clock, Shield } from 'lucide-react';
-
+import TT1 from '../assets/TT1.jpg';
+import TT2 from '../assets/TT2.jpg';
 const images = [
-  "/src/assets/TT1.jpg",
-  "/src/assets/TT2.jpg",
+  TT1,TT2
   
 ];
 
