@@ -29,8 +29,8 @@ const Navbar = () => {
         {/* DESKTOP LINKS - Stays horizontal via 'flex' */}
         <div className="hidden md:flex items-center gap-8 font-bold text-slate-600">
           <a href="#services" className="hover:text-amber-600 transition text-sm uppercase tracking-wide">Services</a>
-          <a href="#about" className="hover:text-amber-600 transition text-sm uppercase tracking-wide">About</a>
-          <a href="#contact" className="hover:text-amber-600 transition text-sm uppercase tracking-wide">Reviews</a>
+          {/* <a href="#about" className="hover:text-amber-600 transition text-sm uppercase tracking-wide">About</a> */}
+          <a href="#reviews" className="hover:text-amber-600 transition text-sm uppercase tracking-wide">Reviews</a>
           
           {/* PHONE BUTTON */}
           <a 
