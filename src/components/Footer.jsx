@@ -43,10 +43,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-bold mb-6 uppercase tracking-widest text-amber-500">Services</h4>
             <ul className="space-y-4 text-slate-400 font-medium">
-              <li><a href="#services" className="hover:text-white transition-colors">Emergency Towing</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Flatbed Transport</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Roadside Assistance</a></li>
-              <li><a href="#services" className="hover:text-white transition-colors">Battery Boost & Tires</a></li>
+              <li><a href="/#services" className="hover:text-white transition-colors">Emergency Towing</a></li>
+              <li><a href="/#services" className="hover:text-white transition-colors">Flatbed Transport</a></li>
+              <li><a href="/#services" className="hover:text-white transition-colors">Roadside Assistance</a></li>
+              <li><a href="/#services" className="hover:text-white transition-colors">Battery Boost & Tires</a></li>
             </ul>
           </div>
 
@@ -64,7 +64,17 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={20} className="text-amber-500 shrink-0" />
-                <span className="text-slate-300">Serving Ottawa, Nepean, Kanata & Orleans</span>
+                <div className="flex flex-col">
+                  <span className="text-white font-bold uppercase tracking-widest text-xs mb-2">
+                    Serving
+                  </span>
+                  <div className="grid grid-cols-2 gap-x-2 gap-y-2">
+                    <span className="text-slate-400 hover:text-white transition-colors">Ottawa</span>
+                    <span className="text-slate-400 hover:text-white transition-colors">Nepean</span>
+                    <span className="text-slate-400 hover:text-white transition-colors">Kanata</span>
+                    <span className="text-slate-400 hover:text-white transition-colors">Orleans</span>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>

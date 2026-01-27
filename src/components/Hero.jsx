@@ -1,18 +1,25 @@
+"use client"; // Critical: This must be at the top for useState and useEffect
+
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Phone, ArrowRight, Clock, Shield } from 'lucide-react';
-import QuoteModal from './QuoteModal'; // Ensure this file is created in the same folder
-import TT1 from '../assets/TT1.jpg';
-import TT2 from '../assets/TT2.jpg';
 
-const images = [TT1, TT2];
+// 1. Safe Component Import: Use the @ alias to refer to your src directory
+import QuoteModal from '@/components/QuoteModal'; 
+
+// 2. Safe Image References: 
+// In Next.js, static images should ideally live in /public/images/
+// This allows you to reference them as simple strings, which is safer for deployment.
+const images = [
+  "/images/TT1.jpg", 
+  "/images/TT2.jpg"
+];
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const phoneNumber = "548-388-4586";
 
-  // Auto-slide logic
   useEffect(() => {
     const timer = setInterval(() => {
       setIndex((prev) => (prev + 1) % images.length);
@@ -29,21 +36,23 @@ const Hero = () => {
           <AnimatePresence mode="wait">
             <motion.img
               key={index}
-              src={images[index]}
+              // Using the string path from the public folder
+              src={images[index]} 
               initial={{ opacity: 0, scale: 1.05 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 1.2, ease: "easeInOut" }}
               className="absolute inset-0 w-full h-full object-cover"
+              alt="Ottawa Towing Service Truck"
             />
           </AnimatePresence>
         </div>
 
-        {/* 2. THE OVERLAY LAYER */}
-        <div className="absolute inset-0 z-10 bg-gradient-to-r from-slate-950 via-slate-950/50 to-transparent" />
-        <div className="absolute inset-0 z-10 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent" />
+        {/* ... rest of your UI remains the same ... */}
+        
+        <div className="absolute inset-0 z-10 bg-linear-to-r from-slate-950 via-slate-950/50 to-transparent" />
+        <div className="absolute inset-0 z-10 bg-linear-to-t from-slate-950/80 via-transparent to-transparent" />
 
-        {/* 3. CONTENT LAYER */}
         <div className="relative z-20 container mx-auto px-6 lg:px-12 pt-48">
           <motion.div 
             initial={{ opacity: 0, x: -30 }}
@@ -51,7 +60,6 @@ const Hero = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="max-w-4xl"
           >
-            {/* Status Badge */}
             <div className="inline-flex items-center gap-2 bg-amber-500/20 backdrop-blur-md border border-amber-500/40 text-amber-500 px-4 py-1.5 rounded-full mb-8">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
@@ -62,7 +70,6 @@ const Hero = () => {
               </span>
             </div>
 
-            {/* Aggressive Branding Typography */}
             <h1 className="text-5xl md:text-8xl font-black text-white leading-[0.85] mb-6 italic uppercase tracking-tighter drop-shadow-xl">
               Fast Towing <br />
               <span className="text-amber-500 italic">When You Need It Most.</span>
@@ -72,7 +79,6 @@ const Hero = () => {
               Stranded in Ottawa? Our professional fleet is <span className="text-white font-bold underline decoration-amber-500 decoration-2 underline-offset-4">15-30 minutes</span> away. Reliable, affordable, and ready to get you moving.
             </p>
 
-            {/* Call to Action Group */}
             <div className="flex flex-col sm:flex-row gap-5">
               <a 
                 href={`tel:${phoneNumber}`}
@@ -91,7 +97,6 @@ const Hero = () => {
               </button>
             </div>
 
-            {/* Mini Trust Bar */}
             <div className="mt-12 flex flex-wrap gap-8 items-center border-t border-white/10 pt-8">
               <div className="flex items-center gap-3 text-slate-300">
                 <Clock className="text-amber-500" size={20} />
@@ -105,7 +110,6 @@ const Hero = () => {
           </motion.div>
         </div>
 
-        {/* SLIDE INDICATORS */}
         <div className="absolute bottom-10 right-12 z-30 flex gap-3">
           {images.map((_, i) => (
             <button 
@@ -117,7 +121,6 @@ const Hero = () => {
         </div>
       </section>
 
-      {/* Quote Form Modal */}
       <QuoteModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </>
   );

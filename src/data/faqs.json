@@ -1,0 +1,53 @@
+{
+  "roadsideAssistance": [
+    {
+      "id": "ra-01",
+      "question": "What is the average response time for a battery boost in Ottawa?",
+      "answer": "Our goal is a 15-30 minute arrival time. During extreme winter conditions in the National Capital Region, we prioritize emergency calls to ensure driver safety."
+    },
+    {
+      "id": "ra-02",
+      "question": "Can I request roadside assistance for a car I'm driving but don't own?",
+      "answer": "Yes. Unlike some insurance-based programs, our service is contract-based and covers the vehicle being driven at the time of the call."
+    },
+    {
+      "id": "ra-03",
+      "question": "What happens if you can't start my car with a jump start?",
+      "answer": "If a professional boost doesn't work, we can immediately transition the service to a tow to your preferred local mechanic or dealership."
+    }
+  ],
+  "accidentCollision": [
+    {
+      "id": "ac-01",
+      "question": "What are my rights under the Ontario TSSEA act after a collision?",
+      "answer": "You have the right to choose your towing provider and destination. Operators must provide an itemized invoice and a list of your rights before you consent to a tow."
+    },
+    {
+      "id": "ac-02",
+      "question": "Can I retrieve personal items from my car if it's in storage?",
+      "answer": "Yes. Under Ontario law, you must be allowed to retrieve personal property from your towed vehicle without any additional charges."
+    },
+    {
+      "id": "ac-03",
+      "question": "How are towing rates determined for accidents in Ontario?",
+      "answer": "Operators cannot charge more than their published maximum rates. You must be provided with a copy of the 'Maximum Rate Schedule' before consenting to the tow."
+    }
+  ],
+  "specialtyTowing": [
+    {
+      "id": "st-01",
+      "question": "Can all tow trucks handle electric vehicles (EVs)?",
+      "answer": "No. EVs require specialized flatbed equipment to prevent damage to regenerative braking systems. We are Tesla and EV specialist transporters in Ottawa."
+    },
+    {
+      "id": "st-02",
+      "question": "Do you provide long-distance transport for luxury or classic cars?",
+      "answer": "Yes, we regularly shuttle high-end vehicles, including warranty transports to facilities like the Tesla center in Montreal, using specialized loading techniques."
+    },
+    {
+      "id": "st-03",
+      "question": "Is towing an EV different in the winter?",
+      "answer": "EV batteries are sensitive to cold. We monitor battery temperatures during transport and follow specific manufacturer protocols for cold-weather recovery."
+    }
+  ]
+}

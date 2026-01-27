@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Star, ChevronLeft, ChevronRight, Quote, ArrowRight } from 'lucide-react';
@@ -27,10 +28,10 @@ const Reviews = () => {
 
   return (
     <section id="reviews" className="w-full bg-black overflow-hidden">
-      <div className="flex flex-col lg:flex-row min-h-[600px]">
+      <div className="flex flex-col lg:flex-row min-h-150">
         
         {/* LEFT SIDE: Visual Brand Proof */}
-        <div className="lg:w-1/2 relative min-h-[400px]">
+        <div className="lg:w-1/2 relative min-h-100">
           <img 
             src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?q=80&w=2000" 
             alt="Customer using phone" 

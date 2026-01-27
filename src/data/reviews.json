@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ref_001",
+    "name": "Danielle Roy",
+    "timeLabel": "1 year ago",
+    "exactDate": "June 11, 2024 at 5:30 AM",
+    "rating": 5,
+    "text": "Flat tire on a Ferrari at 10pm Saturday night on our way back to Montreal. Canadian Towing came to the rescue! Great services and amazing staffs, highly recommend for any high-end vehicle transport.",
+    "avatar": "D",
+    "color": "bg-slate-500",
+    "verified": true
+  },
+  {
+    "id": "ref_002",
+    "name": "Luc Tremblay",
+    "timeLabel": "8 months ago",
+    "exactDate": "May 22, 2025 at 2:15 PM",
+    "rating": 5,
+    "text": "Fastest response time in Nepean. My truck's battery died in the middle of a snowstorm and they were there in 20 minutes. Professional jump start service.",
+    "avatar": "L",
+    "color": "bg-blue-600",
+    "verified": true
+  },
+  {
+    "id": "ref_003",
+    "name": "Sarah Jenkins",
+    "timeLabel": "2 years ago",
+    "exactDate": "January 14, 2024 at 11:00 AM",
+    "rating": 5,
+    "text": "Excellent roadside assistance. I was locked out of my car at the mall and the technician was very careful not to scratch the window trim. Very impressed.",
+    "avatar": "S",
+    "color": "bg-rose-500",
+    "verified": true
+  },
+  {
+    "id": "ref_004",
+    "name": "Marc-Andre L.",
+    "timeLabel": "1 year ago",
+    "exactDate": "August 30, 2024 at 9:45 PM",
+    "rating": 5,
+    "text": "Reliable long-distance towing. Had to move my classic car from Ottawa to Kanata. They used a modern flatbed and secured it perfectly. Best in the city.",
+    "avatar": "M",
+    "color": "bg-amber-600",
+    "verified": true
+  }
+]
